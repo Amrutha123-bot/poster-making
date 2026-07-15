@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Overlay color splash vectors for Holi -->
+  <defs>
+    <filter id="blend">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#blend)" opacity="0.9">
+    <!-- Pink organic splash -->
+    <path d="M 250,220 C 290,190 320,150 350,180 C 380,210 390,260 360,300 C 330,340 280,350 240,320 C 200,290 210,250 250,220 Z" fill="#FF1493"/>
+    
+    <!-- Cyan splash overlay -->
+    <path d="M 180,260 C 210,220 260,200 290,230 C 320,260 310,320 270,350 C 230,380 180,360 160,320 C 140,280 150,300 180,260 Z" fill="#00BFFF"/>
+
+    <!-- Yellow-Gold splash -->
+    <path d="M 280,160 C 310,130 350,110 370,140 C 390,170 360,210 330,230 C 300,250 260,240 250,200 C 240,160 250,190 280,160 Z" fill="#FFCC00"/>
+
+    <!-- Purple droplet splash -->
+    <path d="M 160,180 C 190,160 210,130 230,150 C 250,170 240,200 210,220 C 180,240 150,230 140,200 C 130,170 130,200 160,180 Z" fill="#8A2BE2"/>
+  </g>
+
+  <!-- Accent paint splatter dots -->
+  <g stroke="none">
+    <circle cx="110" cy="150" r="10" fill="#FF1493"/>
+    <circle cx="130" cy="130" r="6" fill="#FF1493"/>
+    <circle cx="390" cy="110" r="8" fill="#00BFFF"/>
+    <circle cx="410" cy="140" r="14" fill="#00BFFF"/>
+    <circle cx="420" cy="270" r="12" fill="#FFCC00"/>
+    <circle cx="340" cy="380" r="15" fill="#8A2BE2"/>
+    <circle cx="190" cy="400" r="9" fill="#00BFFF"/>
+    <circle cx="100" cy="280" r="11" fill="#FFCC00"/>
+  </g>
+</svg>

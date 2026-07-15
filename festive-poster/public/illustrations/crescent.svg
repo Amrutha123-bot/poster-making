@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="crescent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE399"/>
+      <stop offset="40%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA7C11"/>
+    </linearGradient>
+    <radialGradient id="glow-lamp" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF0BE" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Glowing crescent moon -->
+  <path d="M130,250 C130,130 220,70 300,70 C240,110 200,180 200,250 C200,320 240,390 300,430 C220,430 130,370 130,250 Z" 
+        fill="url(#crescent-grad)" 
+        filter="drop-shadow(0 0 15px rgba(212, 175, 55, 0.4))"/>
+
+  <!-- 8-Pointed Star matching layout -->
+  <g transform="translate(240, 180) scale(0.9)" fill="url(#crescent-grad)">
+    <polygon points="0,-25 7,-7 25,-7 11,5 16,22 0,12 -16,22 -11,5 -25,-7 -7,-7" filter="drop-shadow(0 0 8px #D4AF37)"/>
+  </g>
+
+  <!-- Hanging Lantern (Fanous) -->
+  <g transform="translate(340, 120)">
+    <!-- Hanging string -->
+    <line x1="0" y1="-120" x2="0" y2="0" stroke="#D4AF37" stroke-width="1.5"/>
+    
+    <!-- Lantern Cap -->
+    <path d="M-15,0 L15,0 L10,-12 L-10,-12 Z" fill="url(#crescent-grad)"/>
+    
+    <!-- Glass Body -->
+    <path d="M-22,35 L22,35 L15,0 L-15,0 Z" fill="url(#glow-lamp)" stroke="#D4AF37" stroke-width="1.5"/>
+    
+    <!-- Grill detailing on lantern glass -->
+    <line x1="0" y1="0" x2="0" y2="35" stroke="#D4AF37" stroke-width="1" opacity="0.6"/>
+    <line x1="-8" y1="2" x2="-14" y2="33" stroke="#D4AF37" stroke-width="1" opacity="0.6"/>
+    <line x1="8" y1="2" x2="14" y2="33" stroke="#D4AF37" stroke-width="1" opacity="0.6"/>
+
+    <!-- Lantern Base -->
+    <path d="M-18,35 L18,35 L12,45 L-12,45 Z" fill="url(#crescent-grad)"/>
+    <!-- Hanging Tassel bottom -->
+    <line x1="0" y1="45" x2="0" y2="65" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="0" cy="65" r="3" fill="#D4AF37"/>
+  </g>
+
+  <!-- Minor hanging stars -->
+  <g transform="translate(180, 80)">
+    <line x1="0" y1="-80" x2="0" y2="0" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+    <polygon points="0,-8 2,-2 8,-2 3,1 5,7 0,3 -5,7 -3,1 -8,-2 -2,-2" fill="url(#crescent-grad)"/>
+  </g>
+  <g transform="translate(290, 390)">
+    <line x1="0" y1="-120" x2="0" y2="0" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+    <polygon points="0,-8 2,-2 8,-2 3,1 5,7 0,3 -5,7 -3,1 -8,-2 -2,-2" fill="url(#crescent-grad)"/>
+  </g>
+</svg>
